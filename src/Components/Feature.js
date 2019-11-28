@@ -2,9 +2,9 @@ import React from 'react';
 import Option from './Option'
 import slugify from 'slugify'
 
-const Feature = (props) => {
-    let feature = props.feature
-    const options = this.props.features[feature].map(item => {
+function Feature (props) {
+    let feature = props.feature;
+    const options = props.features[feature].map(item => {
       const itemHash = slugify(JSON.stringify(item));
       return(
         <Option 
