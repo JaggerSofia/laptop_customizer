@@ -40,7 +40,7 @@ class App extends Component {
         <Header />
         <main>
           <FeatureList
-            features={this.props.freatures}
+            features={this.props.features}
             selected={this.state.selected}
             updateFeature={this.updateFeature}
           />
